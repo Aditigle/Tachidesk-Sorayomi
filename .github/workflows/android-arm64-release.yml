@@ -32,10 +32,6 @@ jobs:
       - name: Show Flutter version
         run: flutter --version
 
-      - name: Show Gradle version
-        working-directory: android
-        run: ./gradlew -v
-
       - name: Flutter pub get
         run: flutter pub get
 
