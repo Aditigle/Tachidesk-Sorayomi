@@ -33,7 +33,8 @@ jobs:
         run: flutter --version
 
       - name: Show Gradle version
-        run: cd android && ./gradlew -v
+        working-directory: android
+        run: ./gradlew -v
 
       - name: Flutter pub get
         run: flutter pub get
